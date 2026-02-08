@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Регистрация в спортзале</title>
+  </head>
+  <body>
+    <h2>Регистрация в спортзале</h2>
+
+    <form id="myForm">
+      <label>
+        Имя:<br />
+        <input type="text" name="name" required /> </label
+      ><br /><br />
+
+      <label>
+        Дата рождения:<br />
+        <input type="date" name="birthdate" required /> </label
+      ><br /><br />
+
+      <label>
+        Тариф:<br />
+        <select name="plan">
+          <option value="Базовый">Базовый</option>
+          <option value="Стандарт">Стандарт</option>
+          <option value="Премиум">Премиум</option>
+        </select> </label
+      ><br /><br />
+
+      <label>
+        <input type="checkbox" name="trainer" />
+        Персональный тренер </label
+      ><br /><br />
+
+      Время посещения:<br />
+      <label>
+        <input type="radio" name="time" value="Утро" required />
+        Утро </label
+      ><br />
+      <label>
+        <input type="radio" name="time" value="Вечер" />
+        Вечер </label
+      ><br /><br />
+
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
